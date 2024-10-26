@@ -6,12 +6,12 @@ As part of my internship, I'm currently working with the **VSDSquadron Mini RISC
 
 ### LAB-1
 The first task assigned was to write a C program that calculates the sum of numbers from 1 to n using gEDIT as a Text Editor.
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s1.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s2.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s3.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s4.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s5.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s6.png)
-!(https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s7.png)
+![s1](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s1.png)
+![s2](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s2.png)
+![s3](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s3.png)
+![s4](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s4.png)
+![s5](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s5.png)
+![s6](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s6.png)
+![s7](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s7.png)
 
 
