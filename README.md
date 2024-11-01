@@ -256,6 +256,5 @@ Fields
 | `or a5, a4, a3`        | R-Type          | `0x00e2f2b3`           |
 | `xor a6, a4, a3`       | R-Type          | `0x00e2f333`           |
 
-This table includes a variety of instructions for initializing, arithmetic operations, logic operations, branching, and memory access. Each instruction is shown with its encoding in 32-bit hexadecimal format.
 
 
