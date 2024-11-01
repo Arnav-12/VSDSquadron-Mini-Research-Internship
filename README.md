@@ -47,7 +47,7 @@ processors except with no branch delay slots and with support for optional varia
 encodings. A base is carefully restricted to a minimal set of instructions sufficient to provide a RISC-V ISA is defined as a base integer ISA, which must be present in any implementation, plus
 optional extensions to the base ISA. The base integer ISAs are very similar to that of the early RISC
 processors except with no branch delay slots and with support for optional variable-length instruction
-encodings. A base is carefully restricted to a minimal set of instructions sufficient to provide a
+encodings.
 
 ### Types of Instruction Formats in RISC-V
 RISC-V instructions are organized into five main types based on how operands and data are accessed and manipulated.
@@ -66,7 +66,7 @@ funct7 (7 bits): Additional control bits that refine the operation further (e.g.
 rs1 (5 bits): First source register, providing one operand.
 rs2 (5 bits): Second source register, providing the other operand.
 rd (5 bits): Destination register where the result is stored.
-![s12](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s10.png)
+![s12](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s12.png)
 
 2. I-Type (Immediate) Instruction
 Purpose
@@ -78,7 +78,7 @@ funct3 (3 bits): Determines the specific operation within the immediate class (e
 rs1 (5 bits): Source register that provides the operand.
 rd (5 bits): Destination register for the result.
 Immediate (12 bits): Constant value used as an operand, signed or zero-extended depending on the operation.
-![s13](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s11.png)
+![s13](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s13.png)
 
 3. S-Type (Store) Instruction
 Purpose
@@ -90,7 +90,7 @@ funct3 (3 bits): Defines the type of store operation (e.g., word, byte).
 rs1 (5 bits): Register holding the base address for the store.
 rs2 (5 bits): Source register containing the data to store.
 Immediate (12 bits): Split into two parts (5 bits and 7 bits), represents the offset added to the base address to get the effective memory location.
-![s14](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s12.png)
+![s14](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s14.png)
 
 4. B-Type (Branch) Instruction
 Purpose
@@ -103,7 +103,7 @@ rs1 (5 bits): First source register for comparison.
 rs2 (5 bits): Second source register for comparison.
 Immediate (12 bits): Offset added to the program counter (PC) if the branch is taken. This offset is split into multiple parts within the instruction encoding.
 
-![s15](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s13.png)
+![s15](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s15.png)
 
 5. U-Type (Upper Immediate) Instruction
 Purpose
@@ -114,7 +114,7 @@ opcode (7 bits): Indicates an upper immediate operation (e.g., lui for Load Uppe
 rd (5 bits): Destination register for the immediate value.
 Immediate (20 bits): The upper 20-bit immediate value to load, with the lower 12 bits of the register typically cleared.
 
-![s16](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s14.png)
+![s16](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s16.png)
 
 6. J-Type (Jump) Instruction
 Purpose
@@ -124,6 +124,6 @@ Fields
 opcode (7 bits): Indicates a jump operation (e.g., jal for Jump and Link).
 rd (5 bits): Destination register to store the return address (PC + 4).
 Immediate (20 bits): Offset added to the current PC to get the jump target address. The immediate field is split across the instruction format.
-![s17](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s15.png)
+![s17](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s17.png)
 
 
