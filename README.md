@@ -159,4 +159,103 @@ Fields
 
 ![s17](https://github.com/Arnav-12/VSDSquadron-Mini-Research-Internship/blob/main/s17.png)
 
+### Examples
+
+1. **`lui a0, 0x21`**  
+   - **Type**: U-Type
+   - **Description**: Load upper immediate 0x21 into `a0`.
+   - **Encoding**: `0x02100537`
+
+2. **`addi sp, sp, -16`**  
+   - **Type**: I-Type
+   - **Description**: Subtract 16 from the stack pointer (sp).
+   - **Encoding**: `0xff110113`
+
+3. **`li a2, 15`**  
+   - **Type**: I-Type
+   - **Description**: Load immediate 15 into `a2`. (This is usually a pseudo-instruction translated into `addi a2, x0, 15`).
+   - **Encoding**: `0x00f00113`
+
+4. **`sd ra, 8(sp)`**  
+   - **Type**: S-Type
+   - **Description**: Store doubleword of return address `ra` at `sp + 8`.
+   - **Encoding**: `0x00a13023`
+
+5. **`ld ra, 8(sp)`**  
+   - **Type**: I-Type
+   - **Description**: Load doubleword from `sp + 8` into `ra`.
+   - **Encoding**: `0x00a13003`
+
+6. **`auipc a5, 0xffff0`**  
+   - **Type**: U-Type
+   - **Description**: Load upper immediate `0xffff0` into `a5`, then add the program counter.
+   - **Encoding**: `0xffff0537`
+
+7. **`add a3, a4, a2`**  
+   - **Type**: R-Type
+   - **Description**: Add `a4` and `a2` and store result in `a3`.
+   - **Encoding**: `0x00c202b3`
+
+8. **`sub a1, a0, a2`**  
+   - **Type**: R-Type
+   - **Description**: Subtract `a2` from `a0`, store result in `a1`.
+   - **Encoding**: `0x40a20333`
+
+9. **`jal x1, 12`**  
+   - **Type**: J-Type
+   - **Description**: Jump to address `PC + 12`, store return address in `x1`.
+   - **Encoding**: `0x0000006f`
+
+10. **`jalr x0, x1, 0`**  
+    - **Type**: I-Type
+    - **Description**: Jump to address in `x1`, store return address in `x0`.
+    - **Encoding**: `0x000080e7`
+
+11. **`slli a5, a5, 2`**  
+    - **Type**: I-Type
+    - **Description**: Shift `a5` left by 2 bits and store result in `a5`.
+    - **Encoding**: `0x0022b193`
+
+12. **`bne a2, a3, -4`**  
+    - **Type**: B-Type
+    - **Description**: Branch if `a2` is not equal to `a3`, with offset -4.
+    - **Encoding**: `0xfff2dfe3`
+
+13. **`and a4, a3, a2`**  
+    - **Type**: R-Type
+    - **Description**: Perform bitwise AND on `a3` and `a2`, store result in `a4`.
+    - **Encoding**: `0x00c2e2b3`
+
+14. **`or a5, a4, a3`**  
+    - **Type**: R-Type
+    - **Description**: Perform bitwise OR on `a4` and `a3`, store result in `a5`.
+    - **Encoding**: `0x00e2f2b3`
+
+15. **`xor a6, a4, a3`**  
+    - **Type**: R-Type
+    - **Description**: Perform bitwise XOR on `a4` and `a3`, store result in `a6`.
+    - **Encoding**: `0x00e2f333`
+
+### Summary of 15 RISC-V Instructions with 32-Bit Encoding
+
+| Assembly Instruction   | Instruction Type | Encoding (Hexadecimal) |
+|------------------------|------------------|-------------------------|
+| `lui a0, 0x21`         | U-Type          | `0x02100537`           |
+| `addi sp, sp, -16`     | I-Type          | `0xff110113`           |
+| `li a2, 15`            | I-Type          | `0x00f00113`           |
+| `sd ra, 8(sp)`         | S-Type          | `0x00a13023`           |
+| `ld ra, 8(sp)`         | I-Type          | `0x00a13003`           |
+| `auipc a5, 0xffff0`    | U-Type          | `0xffff0537`           |
+| `add a3, a4, a2`       | R-Type          | `0x00c202b3`           |
+| `sub a1, a0, a2`       | R-Type          | `0x40a20333`           |
+| `jal x1, 12`           | J-Type          | `0x0000006f`           |
+| `jalr x0, x1, 0`       | I-Type          | `0x000080e7`           |
+| `slli a5, a5, 2`       | I-Type          | `0x0022b193`           |
+| `bne a2, a3, -4`       | B-Type          | `0xfff2dfe3`           |
+| `and a4, a3, a2`       | R-Type          | `0x00c2e2b3`           |
+| `or a5, a4, a3`        | R-Type          | `0x00e2f2b3`           |
+| `xor a6, a4, a3`       | R-Type          | `0x00e2f333`           |
+
+This table includes a variety of instructions for initializing, arithmetic operations, logic operations, branching, and memory access. Each instruction is shown with its encoding in 32-bit hexadecimal format.
+
 
